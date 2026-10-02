@@ -1,13 +1,7 @@
-/**
- * The 6 washing machines (shared resource).
- * Concurrency concept: mutual exclusion + condition synchronisation.
- *  - synchronized  : only one thread can change the machine data at a time
- *  - wait()        : a customer sleeps while all machines are busy
- *  - notifyAll()   : wakes the sleeping customers when a machine is released
- */
+
 public class WashingMachines {
 
-    private boolean[] busy;          // busy[0] is Washer 1, busy[1] is Washer 2, ...
+    private final boolean[] busy;          // busy[0] is Washer 1, busy[1] is Washer 2, ...
     private int availableSlots;      // how many machines are free right now
     private int inUse = 0;           // how many machines are busy right now
     private int maxInUse = 0;        // statistic: highest number busy at the same time
@@ -52,14 +46,17 @@ public class WashingMachines {
 
     // The methods below are used by the GUI and the statistics
     public synchronized boolean isBusy(int machine) {
+
         return busy[machine - 1];
     }
 
     public synchronized int getTotal() {
+
         return busy.length;
     }
 
     public synchronized int getCurrentInUse() {
+
         return inUse;
     }
 

@@ -1,17 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * MAIN PROGRAM (console version) - Basic + Additional requirements.
- *
- * ASSUMPTIONS
- *  1. A failed washing machine is released straight away and the customer retries
- *     (possibly with a different machine) after waiting 1 second.
- *  2. A failed payment kiosk is retried by the same customer at the same kiosk
- *     after 2 seconds.
- *  3. Customers are served in no guaranteed order (wait()/notifyAll() is not FIFO).
- *  4. The spec says both "about 60 seconds" and "1-2 minutes". With 50 customers
- *     arriving 0-3 seconds apart, the run takes about 1.5 minutes.
- */
+
 public class LaundrySimulationMain {
 
     private static final int NUM_WASHERS = 6;

@@ -1,9 +1,4 @@
-/**
- * The 2 payment kiosks (shared resource).
- * Same synchronized + wait()/notifyAll() pattern as the washers and dryers.
- * It also counts the customers waiting in the payment queue.
- * BONUS: it can be switched to "broken" to create the congested scenario.
- */
+
 public class PaymentKiosks {
 
     private boolean[] busy;              // busy[0] is Kiosk 1, busy[1] is Kiosk 2

@@ -1,10 +1,4 @@
-/**
- * Collects the statistics of the simulation:
- *  - total customers served
- *  - average total time per customer
- * Many customer threads report at the same time, so every method is synchronized
- * to stop two threads corrupting the counters (a race condition).
- */
+
 public class Statistics {
 
     private int customersServed = 0;

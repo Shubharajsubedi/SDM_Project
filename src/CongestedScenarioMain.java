@@ -1,10 +1,10 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * BONUS 1 (console version): CONGESTED SCENARIO.
- * Both payment kiosks are broken for the whole day, so customers pile up in the
- * payment queue. The owner is called in once 30 customers are waiting.
- */
+
+ //BONUS 1 (console version): CONGESTED SCENARIO.
+ //Both payment kiosks are broken for the whole day, so customers pile up in the
+ //payment queue. The owner is called in once 30 customers are waiting.
+
 public class CongestedScenarioMain {
 
     private static final int NUM_CUSTOMERS = 50;

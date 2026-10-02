@@ -1,11 +1,7 @@
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-/**
- * Prints every message to the console AND to the GUI log window (if one is open).
- * Every line starts with the name of the thread that printed it, e.g. "[Customer-5] ...",
- * so we can prove that each thread only acts for itself.
- */
+
 public class Logger {
 
     // The GUI text box (stays null when running the console-only version)

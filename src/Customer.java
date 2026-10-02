@@ -1,11 +1,6 @@
 import java.util.concurrent.ThreadLocalRandom;
 
-/**
- * One laundry customer = one thread.
- * A customer does three stages in order: wash -> dry -> pay.
- * At every stage the customer must first get a free machine (down()),
- * use it, and then give it back (up()).
- */
+
 public class Customer extends Thread {
 
     private final WashingMachines washers;

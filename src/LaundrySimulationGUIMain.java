@@ -1,9 +1,8 @@
 import javax.swing.SwingUtilities;
 
-/**
- * BONUS 2 ENTRY POINT: run this file to open the GUI dashboard.
- * It only creates the shared objects and opens the window.
- */
+
+ // BONUS 2 ENTRY POINT: run this file to open the GUI dashboard.
+
 public class LaundrySimulationGUIMain {
 
     public static void main(String[] args) {

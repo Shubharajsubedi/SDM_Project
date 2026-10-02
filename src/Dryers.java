@@ -1,8 +1,4 @@
-/**
- * The 4 dryers (shared resource).
- * Works exactly like WashingMachines: synchronized methods with wait()/notifyAll(),
- * so no two customers can ever use the same dryer at the same time.
- */
+
 public class Dryers {
 
     private boolean[] busy;          // busy[0] is Dryer 1, busy[1] is Dryer 2, ...
